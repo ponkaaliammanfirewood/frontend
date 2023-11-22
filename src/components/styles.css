@@ -1,0 +1,80 @@
+/* styles.css */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+.card {
+  width: 80%; /* Adjusted for better responsiveness */
+  max-width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Adjusted for better spacing on mobile */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card label {
+  margin-bottom: 10px;
+}
+
+.card input,
+.card select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0; /* Center the button on mobile */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on mobile */
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Add margin between buttons on mobile */
+}
+
+.find {
+  margin-top: 20px; /* Adjusted for better spacing on mobile */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+    max-width: none; /* Remove max-width on mobile */
+  }
+  .nav {
+    margin-top: 40%; /* Adjusted for better spacing on mobile */
+  }
+}
